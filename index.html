@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Screen keyboard Demo</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/softkeys-0.0.1.css">
+</head>
+<body>
+
+<div class="container-fluid" style="margin-top:10px;">
+    <h1>Screen keyboard Demo</h1>
+    <form class="row form">
+        <!-- login form -->
+        <div class="row">
+            <div class="col-md-2">
+                <input type="text" id="input-id" name="login-id" class="form-control input-lg" placeholder="ID">
+                <input type="password" id="input-pw" name="login-pw" class="form-control input-lg" placeholder="パスワード">
+            </div>
+        </div>
+        <br />
+        <!-- show keyboard -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="softkeys1" data-target="input[type='text']"></div>
+                <div class="softkeys2" data-target="input[type='password']"></div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- keyboard script -->
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/softkeys-0.0.1.js"></script>
+<script src="js/keyboard.js"></script>
+</body>
+</html>
